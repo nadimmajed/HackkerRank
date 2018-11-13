@@ -7,9 +7,5 @@ if __name__ == '__main__':
         student_marks[name] = scores
     query_name = input()
     list_score=student_marks[query_name]
-    
-    perc =0
-    for i in list_score:
-        perc+=i
         
-    print("{0:.2f}".format(perc/len(list_score)))
+    print("{0:.2f}".format(sum(list_score)/len(list_score)))
